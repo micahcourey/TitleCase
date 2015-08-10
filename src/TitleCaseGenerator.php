@@ -9,6 +9,7 @@
         function makeTitleCase($input_title)
         {
             $designated_words = array('a', 'an', 'the', 'at', 'by', 'for', 'in', 'of', 'on', 'to', 'up', 'and', 'as', 'but', 'or', 'nor');
+            $input_title = (strtolower($input_title));
             $input_array_of_words = explode(" ", $input_title);
             $output_titlecased = array();
             foreach ($input_array_of_words as $word) {

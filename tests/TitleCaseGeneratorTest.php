@@ -69,6 +69,32 @@
             //Assert
             $this->assertEquals("The Lord of the Rings", $result);
         }
+
+        function test_makeTitleCase_nonLetter()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "101 dalmations";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("101 Dalmations", $result);
+        }
+
+        function test_makeTitleCase_allUpper()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "TERMINATOR";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("Terminator", $result);
+        }
     }
 
  ?>
