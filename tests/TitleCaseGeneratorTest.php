@@ -108,6 +108,19 @@
             //Assert
             $this->assertEquals("Terminator", $result);
         }
+
+        function test_makeTitleCase_hyphenated()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "x-files";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("X-Files", $result);
+        }
     }
 
  ?>
