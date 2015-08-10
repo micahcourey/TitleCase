@@ -10,9 +10,9 @@ X5.  Capitalizes designated words if they are the first word
     Ex. 'the lord of the rings' -> 'The Lord of the Rings'
 X6.  Handles non-letter characters
     Ex. '101 dalmations' -> '101 Dalmations'
-O7.  Manages all uppercase entries
+X7.  Manages all uppercase entries
     Ex. 'TERMINATOR' -> 'Terminator'
-O8.  Manages mixed case entries
+X8.  Manages mixed case entries
     Ex. 'TeRmiNaToR' -> 'Terminator'
 O9.  Manages unique case entries
     Ex. 'McDuff' -> 'McDuff'

@@ -95,6 +95,19 @@
             //Assert
             $this->assertEquals("Terminator", $result);
         }
+
+        function test_makeTitleCase_mixedCase()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "TeRmiNaToR";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("Terminator", $result);
+        }
     }
 
  ?>
