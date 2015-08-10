@@ -42,6 +42,11 @@
                 }
             }
 
+            // properly capitalizes names beginning with Mc
+            $pos = strpos($final_title, "Mc");
+            if (strpos($final_title, 'Mc') !== false) {
+                $final_title[$pos + 2] = ucfirst(substr($final_title, $pos + 2, 1));
+            }
             // capitalizes first letter of entire string
             return ucfirst($final_title);
         }

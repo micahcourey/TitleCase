@@ -133,6 +133,19 @@
             //Assert
             $this->assertEquals("O'Brian's", $result);
         }
+
+        function test_makeTitleCase_mc()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "mcdonald";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("McDonald", $result);
+        }
     }
 
  ?>
