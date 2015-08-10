@@ -36,6 +36,7 @@
                 if ($char == '-') {
                     $final_title[$i + 1] = ucfirst(substr($final_title, $i + 1, 1));
                 }
+                // capitalizes letters after apostrophe, except s
                 if ($char == "'" && $final_title[$i + 1] !== "s") {
                     $final_title[$i + 1] = ucfirst(substr($final_title, $i + 1, 1));
                 }

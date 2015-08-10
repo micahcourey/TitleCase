@@ -121,6 +121,18 @@
             //Assert
             $this->assertEquals("X-Files", $result);
         }
+        function test_makeTitleCase_apostraphe()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "o'brian's";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("O'Brian's", $result);
+        }
     }
 
  ?>

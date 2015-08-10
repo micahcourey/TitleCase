@@ -16,5 +16,5 @@ X8.  Manages mixed case entries
     Ex. 'TeRmiNaToR' -> 'Terminator'
 O9.  Manages unique case entries
     Ex. 'McDuff' -> 'McDuff'
-10. Correctly capitalize hyphenated words
+X10. Correctly capitalize hyphenated words
     Ex. "x-files" -> "X-Files"
