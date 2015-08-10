@@ -18,7 +18,9 @@
                     array_push($output_titlecased, ucfirst($word));
                 }
             }
-            return implode(" ", $output_titlecased);
+            $final_title = implode(" ", $output_titlecased);
+            return ucfirst($final_title);
+            //return implode(" ", $output_titlecased);
         }
     }
 
