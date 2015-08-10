@@ -8,9 +8,14 @@
         'twig.path' => __DIR__.'/../views'
     ));
 
+    // Root route directs to form.html.twig
+
     $app->get("/", function() use ($app) {
         return $app['twig']->render('form.html.twig');
     });
+
+    // Render title_cased.html.twig
+    // pass $title_cased_phrase as a variable called result
 
     $app->get("/view_title_case", function() use($app) {
         $my_TitleCaseGenerator = new TitleCaseGenerator;

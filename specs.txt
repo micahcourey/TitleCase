@@ -1,0 +1,20 @@
+1.  Capitalize one-character word
+    Ex. 'x' -> 'X'
+2.  Capitalize first letter of a single word
+    Ex. 'terminator' -> 'Terminator'
+3.  Capitalize first letter of multiple word string
+    Ex. 'terminator genisys' -> 'Terminator Genisys'
+4.  Does not capitalize designated words (prepositions, conjuctions, etc)
+    Ex. 'the lord of the rings' -> 'the Lord of the Rings'
+5.  Capitalizes designated words if they are the first word
+    Ex. 'the lord of the rings' -> 'The Lord of the Rings'
+6.  Handles non-letter characters
+    Ex. '101 dalmations' -> '101 Dalmations'
+7.  Manages all uppercase entries
+    Ex. 'TERMINATOR' -> 'Terminator'
+8.  Manages mixed case entries
+    Ex. 'TeRmiNaToR' -> 'Terminator'
+9.  Manages unique case entries
+    Ex. 'McDuff' -> 'McDuff'
+10. Correctly capitalize hyphenated words
+    Ex. "x-files" -> "X-Files"
